@@ -16,7 +16,7 @@ const Losers = () => {
 
             const data = await res.json();
 
-            if (res.status == 201) {
+            if (res.status === 201) {
                 setData(data['data'])
                 console.log(data['data']);
                 setShow(true)

@@ -16,7 +16,7 @@ const Trending = () => {
 
             const data = await res.json();
 
-            if (res.status == 201) {
+            if (res.status === 201) {
                 setData(data['data'])
                 setShow(true)
             }

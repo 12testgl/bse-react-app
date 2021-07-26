@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import Home from './bse/Home';
+import Trending from './bse/Trending';
+import Gainers from './bse/Gainers';
+import Losers from './bse/Losers';
+import Navbar from './bse/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Switch>
+        <Route path='/' exact> <Home /></Route>
+        <Route path='/trending'><Trending /></Route>
+        <Route path='/gainers'><Gainers /></Route>
+        <Route path='/losers'><Losers /></Route>
+      </Switch>
     </div>
   );
 }

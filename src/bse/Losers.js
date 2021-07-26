@@ -10,7 +10,7 @@ const Losers = () => {
             const res = await fetch('https://bse-flaskapi.herokuapp.com/losers', {
                 method: 'GET',
                 headers: {
-                    'Content-Type': 'application/json'
+                    "Content-type": "application/json"
                 }
             })
 

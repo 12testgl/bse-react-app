@@ -7,7 +7,7 @@ const Losers = () => {
     const getdata = async () => {
         try {
 
-            const res = await fetch('https://bse-flaskapi.herokuapp.com/losers', {
+            const res = await fetch('/losers', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'

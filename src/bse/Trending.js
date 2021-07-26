@@ -7,7 +7,7 @@ const Trending = () => {
     const getdata = async () => {
         try {
 
-            const res = await fetch('https://bse-flaskapi.herokuapp.com/trending', {
+            const res = await fetch('/trending', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'

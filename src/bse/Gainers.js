@@ -7,7 +7,7 @@ const Gainers = () => {
     const getdata = async () => {
         try {
 
-            const res = await fetch('/gainers', {
+            const res = await fetch('https://bse-flaskapi.herokuapp.com//gainers', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
